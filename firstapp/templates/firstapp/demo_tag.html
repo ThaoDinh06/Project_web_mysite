@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo tag</title>
+</head>
+<body>
+    <div>
+        {% if DiemTB >= 5 %}
+            <p>Kết quả: Đạt</p>
+        {% else %}
+            <p>Kết quả: Rớt</p>
+        {% endif %}
+    </div>
+
+    <div>
+        <p>{{ Text|length }}</p>
+        <p>{{ Text|lower }}</p>
+        <p>{{ Text|upper }}</p>
+        <p>{{ Text|truncatewords:10 }}</p>
+    </div>
+
+    <div>
+        <img src="{% static 'firstapp/images/hoa_hong.jpg' %}" alt="hoa hồng">
+    </div>
+</body>
+</html>
